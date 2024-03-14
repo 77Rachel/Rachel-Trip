@@ -2,12 +2,7 @@
   <div class="city">
     <div class="top">
       <!-- 1.搜索框 -->
-      <van-search 
-      v-model="searchValue" 
-      placeholder="城市/区域/位置" 
-      shape="round" 
-      show-action 
-      @cancel="cancelClick" />
+      <van-search v-model="searchValue" placeholder="城市/区域/位置" shape="round" show-action @cancel="cancelClick" />
 
       <!-- 2.tab的切换 -->
       <!-- tabActive默认索引 -->
@@ -21,7 +16,7 @@
     <!-- 城市数据的展示 -->
     <div class="content">
       <!-- 优化渲染速度 -->
-      <template v-for="(value,key,index) in allCities" key="index">
+      <template v-for="(value, key, index) in allCities" key="index">
         <!-- 判断是否等于当前副标题 -->
         <CityGroup v-show="tabActive === key" :group-data="value"></CityGroup>
       </template>

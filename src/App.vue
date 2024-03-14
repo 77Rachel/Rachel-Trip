@@ -9,7 +9,7 @@
 
     <tab-bar v-if="!route.meta.hideTabBar"></tab-bar>
     <!-- 页面加载提示功能.... -->
-    <Loading/>
+    <Loading />
   </div>
 </template>
 
@@ -23,6 +23,4 @@ const route = useRoute();
 
 </script>
 
-<style lang="less" scoped>
-
-</style>
+<style lang="less" scoped></style>
